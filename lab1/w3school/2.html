@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lab1.2</title>
+        <link rel="icon" href="icon.png" type="image/png" sizes="32x32">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            h1, h2{
+                text-align: center;
+                background-color: darkblue;
+                color:azure;
+                font-size: 40px;
+            }
+            h2{
+                font-size: 30px;
+            }
+            table, th, td {
+                border:1px solid black; 
+                padding: 8px;
+                border-collapse: collapse;
+            }
+            th:nth-child(even),td:nth-child(even) {
+                background-color: #D6EEEE;
+            }
+            tr:hover {background-color: lightcyan;}
+            
+            
+        </style>
+    </head>
+    <body>
+        <!--  -->
+        <h1>My pets</h1>
+        <div>
+        <h3>All my pets that I had</h3>
+        <ul>
+            <li><a title="Tap to scroll to cat section" href="#section-cats">Cats</a></li>
+            <li><a title="Tap to scroll to dog section" href="#section-dogs">Dogs</a></li>
+            <li><a title="Tap to scroll to rat section" href="#section-rats">Rats</a></li>
+        </ul>
+        <hr>
+        <h3>General information</h3>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Year of birth</th>
+                <th colspan="3">Color</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>Sam</b></td>
+                    <td>Cat</td>
+                    <td>2016</td>
+                    <td>Green</td>
+                    <td>Brown</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td><b>Muysya</b></td>
+                    <td>Cat</td>
+                    <td>2005</td>
+                    <td>White</td>
+                    <td>Orange</td>
+                    <td>Black</td>
+                </tr>
+                <tr>
+                    <td><b>Joy</b></td>
+                    <td>Dog</td>
+                    <td>2009</td>
+                    <td>Brown</td>
+                    <td>Black</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </Table>
+        <hr>
+        </div>
+        <div>
+        <h2 id="section-cats">Cats</h2>
+        <p>I have been living with cats <em>all</em> my life and there were <small>only</small> two of them:</p>
+        <ol>
+            <li><pre><strong>Muysya</strong>
+This is a calico cat that we took from the street and, in fact, she was <mark>the same age as me</mark>. She loved potatoes and cucumbers and was a very ill-mannered cat :)
+            <img style="padding-top: 20px" alt="Muysya" width=200px src="images/m.jpg">
+            </li>
+            <li>
+                <strong>Sam</strong>
+                <p>He is also from the street, he is missing one eye, a piece of his <sup>ear</sup> and a <sub>tongue</sub>, he was <del>not very</del> <ins>very</ins> fighting!</p>
+                <img alt="Sam" height=200px src="images/s.jpg">
+            </li>
+
+        </ol>
+        <p>They usually say: <q>meow meow meow meow meow meow</q></p>
+        </div>
+
+        <div>
+        <h2 id="section-dogs">Dogs</h2>
+        <p>He is from a shelter and he lived with us for 14 years.</p>
+        <img alt="Joy" width = 200px src="images/j.jpg">
+
+        <p><cite>Joy</cite> usually says:</p>
+        <blockquote>
+            Woof Woof Woof Woof Woof Woof Woof Woof Woof Woof Woof <br>
+            Woof Woof Woof Woof Woof Woof Woof Woof Woof Woof Woof <br>
+            Woof Woof Woof Woof Woof Woof Woof Woof Woof Woof Woof <br>
+            <bdo dir="rtl">Woof Woof Woof Woof Woof Woof Woof Woof Woof Woof Woof </bdo> <br>
+
+        </blockquote>
+        </div>
+
+        <div>
+        <h2 id="section-rats">Rats</h2>
+        <p>I had about 19 of them and I can’t find photos</p>
+        </div>
+        <hr>
+
+        <address>
+            Written by Sofya Roganskaya.<br>
+            For <abbr title="Kazakh British Technical University">KBTU</abbr>
+        </address>
+    </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lab1.1</title>
+        <style>
+            h3{
+                color: brown;
+                font-family:'Franklin Gothic Medium';
+                font-weight: bolder;
+                font-size: 1.5em;
+                font-style: oblique;
+            }
+            body{
+                background-color: rgb(255, 239, 213);
+                font-size: 15px;
+            }
+            #first-div{
+                background-color:bisque;
+                width: 70%;
+                height: 150px;
+                overflow-y: auto;
+                overflow-x: auto;
+                margin: 10px;
+                border: 3px dotted brown; 
+                border-left: 3px solid brown;
+                padding: 10px;
+            }
+            .first{
+                font-family: monospace;
+                line-height: 25px;
+                text-align: center;
+                text-decoration:underline;
+            }
+            
+            .headers{ /*or just h1, h2{...} */
+                background-color: saddlebrown;
+                color: beige
+            }
+            .spans3{
+                color:black;
+            }
+            #image-1{
+                position: absolute;
+                z-index: 1;
+            }
+            #image-2{
+                width: 200px;
+                left: 150px;
+                position: relative;
+                z-index: 2;
+                margin-bottom: 150px;
+            }
+            #first-top{
+                float: left;
+                margin-right: 200px;
+            }
+            #second-top{
+                clear: none;
+            }
+            h1.first{
+                padding: 10px;
+            }
+            ol.spisok li{
+                font-weight: bolder;
+            }
+            p:hover {
+                background-color: saddlebrown;
+                color: beige;
+            }
+        </style>
+
+
+
+    </head>
+    <body>
+        <a href = "#link">Tap to scroll to the links</a>
+        <h1 class="headers first">Big poem</h1>
+        <p class = "first">
+        Lorem ipsum dolor <em>sit amet</em>, consectetur adipisicing elit. <br>
+        <strong>Odit quis ut dolore ducimus cumque. </strong> <br>
+        Eius voluptates incidunt maxime minima eligendi molestiae, qui quia? <br>
+        Perspiciatis ut libero <em>nihil porro</em> natus ratione!
+        </p>
+
+        <h2 class="headers">TOPS</h1>
+        <div id="first-div">
+        <div id="first-top">
+        <h3>Top <span class="spans3">3</span> my favourite TV shows</h3>
+        <ol class="spisok">
+            <li>Prison Break</li>
+            <li>Game of thrones</li>
+            <li>2 Broke girls</li>
+        </ol>
+        </div>
+        <div id="second-top">
+        <h3><span class="spans3">3</span> counties I would like to visit the most</h3>
+        <ul>
+            <li>Ireland</li>
+            <li>Italy</li>
+            <li>Austria</li>
+        </ul>
+        </div>
+        
+        </div>
+        <p>
+            Lorem ipsum dolor <em>sit amet</em>, consectetur adipisicing elit. <br>
+            <strong>Odit quis ut dolore ducimus cumque. </strong> <br>
+            Eius voluptates incidunt maxime minima eligendi molestiae, qui quia? <br>
+            Perspiciatis ut libero <em>nihil porro</em> natus ratione!
+        </p>
+        <div>
+        <img id="image-1" src="https://plus.unsplash.com/premium_photo-1711279433915-d1d87c42c795?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="random picture" width="500" >
+        <img id="image-2" src="g1.gif" alt="random gif">
+        </div>
+        <h3>I will rate my previous working experience out of 10:)</h3>
+        <table>
+            <thead>
+                <th>Job</th>
+                <th>Rating</th>
+                <th>Comment</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Waiter</td>
+                    <td>3</td>
+                    <td>Points for collegues, but in general too exhausting, I was 16</td>
+                </tr>
+                <tr>
+                    <td>Admin on a quiz</td>
+                    <td>6</td>
+                    <td>I was chilling with my friend</td>
+                </tr>
+                <tr>
+                    <td>Vapeshop</td>
+                    <td>1</td>
+                    <td>Extremely boring</td>
+                </tr>
+                <tr>
+                    <td>Ozon</td>
+                    <td>2</td>
+                    <td>Very boring</td>
+                </tr>
+                <tr>
+                    <td>Tutor for freshmans in 404 </td>
+                    <td>8</td>
+                    <td>Best of all because at least I didn't feel like I was wasting my time</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <!--I can write a comment-->
+        <a id="link" target="_blank" href="C:\Users\sofya\OneDrive\Документы\web-dev\lab1\w3school\2.html"><br><br>You can see a webpage that I created using w3school</a>
+        <a href=""><br><br>You can see a webpage that I created using udacity</a>
+    </body>
+</html>
