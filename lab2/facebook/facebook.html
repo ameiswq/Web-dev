@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Facebook - Выполните вход или зарегистрируйтесь</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+                background-color: rgb(242,244,247);
+                font-family: sans-serif;
+            }
+            #fb{
+                padding-top: 205px;
+                padding-left: 265px;
+                float: left;
+            }
+            p{
+                font-size: 28px;
+                margin-top: 13px;
+            }
+            #vhod{
+                padding: 15px;
+                display: inline-block;
+                background-color: white;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                border-radius: 8px;
+                margin-top: 113px;
+                margin-left: 120px;
+                text-align: center;
+            }
+            .inp{
+                padding-top: 16px;
+                padding-bottom: 16px;
+                padding-left: 14px;
+                padding-right: 14px;
+                border: 1px;
+                border-radius: 5px;
+                width: 35ch;
+                box-shadow: 0px 0px 0px 1px rgb(223, 221, 221);
+                font-size: 17px;
+            }
+            .inp:focus {
+                box-shadow: 0px 0px 0px 2px rgb(231, 243, 255);
+                border: 1px solid rgb(8,102,255); 
+                caret-color: rgb(8,102,255);
+                outline: none; 
+            }
+            .inp:focus::placeholder{
+                color:rgb(190,195,201)
+            }
+            .inp::placeholder{
+                color:rgb(144,148,156);
+            }
+            #email-input{
+                margin-bottom: 15px;
+            }
+            #button-vhod{
+                color:white;
+                background-color: rgb(8,102,255);
+                margin-top: 20px;
+                width: 362px;
+                font-size: 20px;
+                border: 0px;
+                border-radius: 5px;
+                padding: 12px;
+            }
+            #button-vhod:hover{
+                background-color: rgb(24,119,242);
+            }
+            #passw{
+                text-align: center;
+                font-size: 14px;
+                margin: 15px;
+                color: rgb(8,102,255);
+            }
+            #passw:hover{
+                text-decoration: underline;
+            }
+            #newacc{
+                background-color: rgb(66,183,42);
+                color: white;
+                font-size: 17px;
+                border: 0px;
+                padding-top: 14px;
+                padding-bottom: 14px;
+                padding-left: 16px;
+                padding-right: 16px;
+                border-radius: 5px;
+                margin: 7px;
+            }
+            #newacc:hover{
+                background-color: rgb(54,164,32);
+            }
+            #createacc{
+                margin-top: 35px;
+                margin-left: 840px;
+                font-size: 14px; 
+                width: 400px;
+                text-align: center;
+            }
+            #createacc strong:hover{
+                text-decoration: underline;
+            }
+            .inline-paragraph {
+                display: inline;
+                color:rgb(144,148,156);
+                font-size: 12px;
+                margin: 5px;
+            }
+            .inline-paragraph:hover{
+                text-decoration: underline;
+            }
+            #etc{
+                background-color: white;
+                margin-top:180px;
+                padding-top: 28px;
+                padding-bottom: 15px;
+            }
+            .first{
+                padding-left: 222px;
+            }
+            #plus{
+                background-color: rgb(245,246,247);
+                border: 1px solid rgb(204,208,213);
+                color:rgb(98,105,120);
+                padding-right: 10px;
+                padding-left: 10px;
+                font-size: 14px;
+            }
+        </style>
+
+
+
+    </head>
+    <body>
+        <div id="fb">
+        <img width="265px"  src="fb.jpg" alt="facebook">
+        <p id="p1"> Facebook помогает вам всегда<br>
+            оставаться на связи и общаться со<br>
+            своими знакомыми.</p>
+        </div>
+
+        <div id="vhod">
+            <form action="">
+                <input id="email-input" class="inp" type="text" placeholder="Электронный адрес или номер телефона"
+                 required pattern="(^\d{10,15}$)|(^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$)">
+                <br>
+                <input class="inp" type="password" placeholder="Пароль" required>
+                <br>
+                <button id="button-vhod" type="submit"><strong>Вход</strong></button>
+            </form>
+            <p id="passw">Забыли пароль?</p>
+            <hr style="border: 0.5px solid rgba(234, 232, 232, 0.943); margin: 20px;">
+            <button id="newacc" type="submit"><strong>Создать новый аккаунт</strong></button>
+            
+        </div>
+        <p id="createacc"><strong>Cоздать Страницу</strong> заменитости, музыкальной группы или компании.</p>
+
+        <div id="etc">
+            <div>
+            <p class="inline-paragraph first">Русский</p>
+            <p class="inline-paragraph">Қазақша</p>
+            <p class="inline-paragraph">English (US)</p>
+            <p class="inline-paragraph">Türkçe</p>
+            <p class="inline-paragraph">Bahasa Indonesia</p>
+            <p class="inline-paragraph">中文 (简体)</p>
+            <p class="inline-paragraph">Deutsch</p>
+            <p class="inline-paragraph">한국어</p>
+            <p class="inline-paragraph">Shqip</p>
+            <p class="inline-paragraph">Español</p>
+            <p class="inline-paragraph">Portugués (Brasil)</p>
+            <button id="plus" type="submit"><strong>+</strong></button>
+            <hr style="border: 0.5px solid rgba(234, 232, 232, 0.943); width: 1000px">
+            <p class="inline-paragraph first">Зарегистрироваться</p>
+            <p class="inline-paragraph">Вход</p>
+            <p class="inline-paragraph">Messenger</p>
+            <p class="inline-paragraph">Facebook Lite</p>
+            <p class="inline-paragraph">Видео</p>
+            <p class="inline-paragraph">Места</p>
+            <p class="inline-paragraph">Игры</p>
+            <p class="inline-paragraph">Marketplace</p>
+            <p class="inline-paragraph">Meta Pay</p>
+            <p class="inline-paragraph">Магазин Meta</p>
+            <p class="inline-paragraph">Meta Quest</p>
+            <p class="inline-paragraph">Ray-Ban Meta</p>
+            <br>
+            <p class="inline-paragraph first">Meta AI</p>
+            <p class="inline-paragraph">Instagram</p>
+            <p class="inline-paragraph">Threads</p>
+            <p class="inline-paragraph">Благотворительные акции</p>
+            <p class="inline-paragraph">Услуги</p>
+            <p class="inline-paragraph">Центр информации о выборах</p>
+            <p class="inline-paragraph">Политика конфиденциальности</p>
+            <p class="inline-paragraph">Центр конфиденциальности</p>
+            <br>
+            <p class="inline-paragraph first">Группы</p>
+            <p class="inline-paragraph">Информация</p>
+            <p class="inline-paragraph">Создать рекламу</p>
+            <p class="inline-paragraph">Создать Страницу</p>
+            <p class="inline-paragraph">Разработчикам</p>
+            <p class="inline-paragraph">Вакансии</p>
+            <p class="inline-paragraph">Файлы cookie</p>
+            <p class="inline-paragraph">Рекламные предпочтения</p>
+            <p class="inline-paragraph">Условия использования</p>
+            <br>
+            <p class="inline-paragraph first">Справка</p>
+            <p class="inline-paragraph">Загрузка контактов и лица, не являющиеся пользователями</p>
+            <br><br>
+            <p class="inline-paragraph first">Meta © 2025</p>
+            </div>
+        </div>
+
+    </body>
+</html>
