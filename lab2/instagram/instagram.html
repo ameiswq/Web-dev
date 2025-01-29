@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Instagram</title>
+
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+            .phone-pics{
+                width: 300px;
+                position: relative;
+            }
+            #pic1{
+                position: absolute;
+                margin-left: 360px;
+                margin-top: -10px;
+            }
+            #pic2{
+                margin-left: 450px;
+                margin-top: 5px;
+                float: left;
+            }
+            #pic3{
+                width: 180px;
+                margin-bottom: 30px;
+            }
+            #main-div{
+                width: 357px;
+                margin-left: 780px;
+                margin-top: 45px;
+                text-align: center;
+            }
+            #div1{
+                border: 1px solid rgb(219,219,219);
+                text-align: center;
+                display: inline-block;
+                padding-top: 45px;
+                padding-right: 40px;
+                padding-left: 40px;
+            }
+            input{
+                width: 38ch;
+                font-size: 12px;
+                border: 1px solid rgb(219,219,219);
+                margin-bottom: 8px;
+                padding: 10px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                border-radius: 3px;
+            }
+            input::placeholder{
+                color: rgb(115,115,115);
+            }
+            input:focus{
+                border: 1px solid rgb(168,168,168);
+                outline: none;
+            }
+            #button-vhod{
+                background-color: rgb(76,181,249);
+                color: white;
+                border: 0px;
+                border-radius: 8px;
+                font-size: 14px;
+                width: 35ch;
+                padding: 7px;
+                margin-top: 5px;
+                margin-bottom: 4px;
+            }
+            .hr-container {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+            .hr-container hr {
+                flex-grow: 1; 
+                border: none;
+                border: 1px solid rgb(219,219,219);
+            }
+            #parag{
+                font-size: 16px;
+                color: rgb(115,115,115);
+            }
+            #facebook{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+            }
+            #facebook p{
+                font-size: 14px;
+                color: rgb(0,149,246);
+            }
+            #facebook p:hover{
+                color: rgb(0,55,107);
+            }
+            #div2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid rgb(219,219,219);
+                width: 100%;
+                box-sizing: border-box;
+                padding: 13px;
+                margin-top: 10px;
+                gap: 5px;
+            }
+            #div2 p{
+                font-size: 14px;
+            }
+            #div-text{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                margin-top: 50px;
+            }
+            #div-text p{
+                color: rgb(115,115,115);
+                font-size: 12px;
+            }
+            #div-text p:hover{
+                text-decoration: underline;
+            }
+            #last-div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                margin-bottom: 50px;
+            }
+            #last-div p{
+                color: rgb(115,115,115);
+                font-size: 12px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <img class="phone-pics" id="pic1" src="phone.png">
+        <img class="phone-pics" id="pic2" src="phone.png">
+
+        <div id="main-div">
+            <div id="div1">
+                <img id="pic3" src="logo.png" alt="Instagram">
+                <br>
+                <input id="email-input" type="text" placeholder="Телефон, имя пользователя или эл. адрес"
+                     required pattern="(^\d{10,15}$)|(^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$)">
+                <br>
+                <input type="password" placeholder="Пароль" required>
+                <br>
+                <button id="button-vhod" type="submit"><strong>Войти</strong></button>
+                <br>
+                <div class="hr-container">
+                    <hr> <p id="parag">или</p> <hr>
+                </div>
+                <div id="facebook">
+                <img width="20px" height="20px" src="facebook.png" alt="facebook">
+                <p>Войти через Facebook</p>
+                </div>
+                <p style="font-size: 14px; color:rgb(0,55,107); margin-bottom: 17px;">Забыли пароль?</p>
+            </div>
+
+            <div id="div2">
+                <p>У вас еще нет аккаунта? <p style="color: rgb(0,149,246);"><strong>Зарегистрироваться</strong></p> </p>
+            </div>
+
+            <p style="text-align: center; font-size: 14px;">Установите приложение.</p>
+            <img width="250px" src="google.jpg" alert="load">
+        </div> 
+
+        <div id="div-text"> 
+            <p>Meta</p>
+            <p>Информация</p>
+            <p>Блог</p>
+            <p>Вакансии</p>
+            <p>Помощь</p>
+            <p>API</p>
+            <p>Конфиденциальность</p>
+            <p>Условия</p>
+            <p>Места</p>
+            <p>Instagram Lite</p>
+            <p>Threads</p>
+            <p>Загрузка контактов и лица, не являющиеся пользователями</p>
+            <p>Meta Verified</p>
+        </div>
+        <div id="last-div">
+            <p>Русский</p>
+            <p>© 2025 Instagram from Meta</p>
+        </div>
+    </body>
+</html>
