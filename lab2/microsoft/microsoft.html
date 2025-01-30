@@ -14,7 +14,7 @@
                 gap: 260px;
             }
             #main-div p{
-                font-size: 12px;
+                font-size: 13px;
             }
             #main-div p:hover{
                 text-decoration: underline;
@@ -30,7 +30,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 25px;
+                gap: 20px;
             }
             .div-icons{
                 display: flex;
@@ -42,7 +42,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 24px;
+                gap: 21px;
             }
             #pay-way{
                 display: flex;
@@ -50,12 +50,128 @@
                 justify-content: center;
                 gap: 10px;
                 background-color: rgb(0,103,184);
+                height: 58px;
+                margin-right: -10px;
+                margin-left: -10px;
+                margin-top: 5px;
             }
             #pay-way p{
                 color: white;
-                font-size: 15px;
-                font-weight: bolder;
+                font-size: 16px;
+                font-weight: 600;                
             }
+            #micr{
+                position: absolute;
+                margin-left:-10px;
+                width: 100.27%;
+                z-index: 1;
+            }
+            #block{
+                position: absolute;
+                background-color: white;
+                z-index: 2;
+                margin-left: 67px;
+                margin-top: 50px;
+                padding-left: 50px;
+                padding-top: 17px;
+                padding-right: 48px;
+                padding-bottom: 48px;
+            }
+            #block h1{
+                font-size: 37px;
+                font-weight: 600;
+                margin-bottom: -1px;
+            }
+            #block button{
+                background-color: rgb(0, 103, 184);
+                color: white;
+                border: none;
+                font-size: 16px;
+                font-weight: 550;
+                padding-left: 12px;
+                padding-right: 12px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                margin-top: 8px;
+                border-radius: 2px;
+            }
+            #block button:hover{
+                background-color: rgb(0, 92, 165);
+            }
+            #scroll{
+                margin-top: 500px;
+                width: 180px;
+            }
+            #div-scroll{
+                display: flex;
+                justify-content: center; 
+                align-items: center; 
+            }
+            #images{
+                margin-top: 80px;
+                display: flex;
+                justify-content: center; 
+                align-items: center; 
+                gap: 50px;
+            }
+            #images img{
+                width: 40px;
+                margin-bottom: -10px;
+            }
+            #images div{
+                text-align: center;
+            }
+            #images div p{
+                font-size: 16px;
+                font-weight: 600;
+                color: rgb(0, 103, 184);
+                text-decoration: underline;
+            }
+            #last img{
+                width: 330px;
+            }
+            #last button{
+                background-color: rgb(0, 103, 184);
+                color:white;
+                border: none;
+                margin-left: 24px;
+                font-size: 15px;
+                font-weight: 550;
+                padding-left: 12px;
+                padding-right: 12px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 2px;
+                
+            }
+            #last button:hover{
+                background-color: rgb(0, 92, 165);
+            }
+            #last div{
+                width: 330px;
+                height: 500px;
+                box-shadow: 2px 2px 2px rgb(223, 221, 221);
+            }
+            #last{
+                margin-top: 50px;
+                display: flex;
+                justify-content: center; 
+                align-items: center; 
+                gap:20px;
+                margin-bottom: 50px;
+            }
+            #last h2{
+                padding-left: 24px;
+                padding-right: 24px;
+                padding-top: 16px;
+                font-size: 27px;
+                font-weight: 600;
+            }
+            #last p{
+                padding-left: 24px; 
+                padding-right: 24px;
+            }
+            
         </style>
     </head>
     <body>
@@ -101,5 +217,77 @@
             <p>Pay your way, with flexible payment options available at checkout. Learn more</p>
             <img width="10px" src="icons/strelkaleft.jpg">
         </div>
+        
+        <img id="micr"  src="main.avif">
+
+        <div id="block">
+            <h1>Meet Surface Pro</h1>
+            <p>This laptop's unrivalled flexibility and AI features like Live Captions<br>and Cocreator enable you to do more than you ever imagined.</p>
+            <button id="button-shop" type="submit">Shop now</button>
+        </div>
+
+        <div id="div-scroll"><img id="scroll" src="scroll.jpg"> </div>
+
+
+        <div id="images">
+            <div>
+                <img src="icons2/1.svg">
+                <br>
+                <p>Shop Surface devices</p>
+            </div>
+            <div>
+                <img src="icons2/2.svg">
+                <br>
+                <p>Shop Xbox games and consoles</p>
+            </div>
+            <div>
+                <img src="icons2/3.svg">
+                <br>
+                <p>Shop for accessories</p>
+            </div>
+            <div>
+                <img src="icons2/4.svg">
+                <br>
+                <p>Shop for your business</p>
+            </div>
+            <div>
+                <img src="icons2/5.svg">
+                <br>
+                <p>Find your next PC</p>
+            </div>
+            <div>
+                <img src="icons2/6.svg">
+                <br>
+                <p>Choose your Microsoft 365</p>
+            </div>
+        </div>
+
+        <div id="last">
+            <div>
+                <img src="images/1.webp">
+                <h2>Xbox Series S</h2>
+                <p>Next-gen performance in the smallest Xbox ever.</p>
+                <button style="margin-top:93px">Shop Xbox Series S</button>
+            </div>
+            <div>
+                <img src="images/3.avif">
+                <h2>Reveal the mysteries within</h2>
+                <p>Get the Xbox Wireless Controller – Pulse Cipher, featuring a transparent red design, silver interior, metallic features, and more.</p>
+                <button style="margin-top:14.5px">Pre-order now</button>
+            </div>
+            <div>
+                <img src="images/2.avif">
+                <h2>Save up to $500 on select Surface Laptop, Copilot+ PC</h2>
+                <p>Save big on an AI-powered companion made for next-gen performance. For a limited time.</p>
+                <button style="margin-top:1px">Shop now</button>
+            </div>
+            <div>
+                <img src="images/4.avif">
+                <h2>Copilot is your AI companion</h2>
+                <p>Always by your side, ready to support you whenever and wherever you need it.</p>
+                <button style="margin-top:36px">Download the Copilot app</button>
+            </div>
+        </div>
+        
     </body>
 </html>
