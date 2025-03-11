@@ -1,0 +1,26 @@
+<div class="page">
+  <div class="content">
+    <div class="albums">
+      <h2 style="display: inline-block; margin-right: 10px;">Albums list:</h2>
+      <button class="create-btn" (click)="showPopup()">+</button>
+      <section class="creation">
+        <div class="pop-up" [hidden]="!isPopupVisible">
+          <input [(ngModel)]="newAlbumName" placeholder="Enter album name">
+          <input [(ngModel)]="newAlbumDescription" placeholder="Enter album description">
+          <input [(ngModel)]="newAlbumPhotos" placeholder="Enter album number of photos" type="number">
+          <div *ngFor="let i of [].constructor(newAlbumPhotos); let index = index">
+            <input [(ngModel)]="newAlbumImages[index]" placeholder="Enter a link to the photo">
+          </div>
+          <button (click)="createAlbum()">Create</button>
+          <button (click)="closePopup()">Cancel</button>
+        </div>
+      </section>
+
+
+      <div class="album" *ngFor="let album of albums">
+        <a [routerLink]="['/albums', album.id]">{{ album.title }}</a>
+        <img class="delete" (click)="deleteAlbum(album.id)" src="assets/garbage.png" alt="delete">
+      </div>
+    </div>
+  </div>
+</div>

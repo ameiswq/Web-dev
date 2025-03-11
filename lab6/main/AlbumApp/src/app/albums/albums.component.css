@@ -1,0 +1,78 @@
+.page{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.content{
+  width: 80vw;
+  margin-top: 5vh;
+}
+
+.albums{
+  color: azure;
+  background-color: #000000;
+  min-height: 100vh;
+}
+
+.album a{
+  color: azure;
+}
+.album{
+  margin-top:15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Растягиваем элементы */
+  width: 100%; /* Чтобы занимали всю ширину */
+  border-bottom: 1px solid #ccc; /* Разделитель между альбомами */
+  padding: 10px;
+}
+
+h2{
+  font-size:45px;
+}
+
+.create-btn{
+  border: 1px solid #545454;
+  border-radius: 3px;
+  font-size: 25px;
+  padding-right: 10px;
+  padding-left: 10px;  
+}
+.create-btn:hover{
+  color: #545454;
+  cursor: pointer;
+}
+.create-btn:active{
+  background-color: #353535;
+}
+
+
+.delete{
+  height: 2.5vh;
+}
+.delete:hover{
+  cursor: pointer;
+}
+
+
+.pop-up {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.pop-up input {
+  display: block;
+  margin-bottom: 10px;
+}
+.pop-up button {
+  border: 1px solid #545454;
+  border-radius: 3px;
+}

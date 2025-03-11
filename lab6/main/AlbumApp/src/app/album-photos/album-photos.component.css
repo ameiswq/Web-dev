@@ -1,0 +1,25 @@
+.photos{
+  display: flex;
+  width: 70vw;
+  flex-wrap: wrap;
+  background-color: #000000;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.photo-li{
+  width: 20vw;
+  height: 15vw;
+  margin: 1vw 1.6vw 1vw 1.6vw;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 0 2vh black ;
+}
+
+.return-btn{
+  margin: 20px;
+  top: 10%;
+  left: 10%;
+  border: 1px solid #545454;
+  border-radius: 3px;
+}

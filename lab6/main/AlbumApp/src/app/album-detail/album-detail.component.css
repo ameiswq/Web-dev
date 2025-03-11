@@ -1,0 +1,54 @@
+.album-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #000000;
+  color: azure;
+  flex-direction: column;
+  min-height: 100vh;
+  height: auto;
+}
+.album-div img{
+  width: 60vw;
+}
+.album-div a{
+  color: azure;
+}
+
+.name{
+  display: flex;
+  width: 10vw;
+  align-items: center;
+  justify-content: space-between;
+}
+.name img{
+  height: 2.5vh;
+  width: 2.5vh;
+}
+
+.name-set {
+  position: fixed;
+  top: 20%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.name-set input {
+  display: block;
+  margin-bottom: 10px;
+}
+.name-set button {
+  border: 1px solid #545454;
+  border-radius: 3px;
+}
+
+.return-btn{
+  margin-top: 20px;
+  top: 10%;
+  left: 10%;
+  border: 1px solid #545454;
+  border-radius: 3px;
+}
